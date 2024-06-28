@@ -1,0 +1,13 @@
+{
+  "name": "MyAPI Load Test",
+  "endpoints": [
+    {
+      "name": "GetAll",
+      "url": "http://localhost:7233/api/Airlines", // Replace with your API endpoint
+      "method": "GET",
+      "duration": "10s", // Duration of the test (e.g., 10 seconds)
+      "connections": 10, // Number of concurrent connections
+      "warmupDuration": "2s" // Warm-up duration before measurements start
+    }
+  ]
+}
